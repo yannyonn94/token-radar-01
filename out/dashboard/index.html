@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar: pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <h1>Token Radar</h1>
+    <p class="subtitle">Pre-token protocols ranked by implied value &middot; model radar-2</p>
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button id="tab-board" class="tab active" role="tab" aria-selected="true">Board</button>
+      <button id="tab-live" class="tab" role="tab" aria-selected="false">Live tokens</button>
+      <button id="tab-model" class="tab" role="tab" aria-selected="false">Model</button>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <div id="view-board" class="view">
+    <section class="controls wrap">
+      <input id="search" type="search" placeholder="Search protocol&hellip;" aria-label="Search protocols">
+      <select id="category-filter" aria-label="Filter by category"><option value="">All categories</option></select>
+      <select id="chain-filter" aria-label="Filter by chain"><option value="">All chains</option></select>
+      <label class="check"><input type="checkbox" id="watchlist-only"> Watchlist only</label>
+    </section>
+    <div class="wrap">
+      <table class="board-table" id="board-table">
+        <thead>
+          <tr>
+            <th data-sort="rank">#</th>
+            <th data-sort="name">Protocol</th>
+            <th data-sort="category">Category</th>
+            <th data-sort="chains">Chains</th>
+            <th data-sort="tvl_usd">TVL</th>
+            <th data-sort="change_7d">7d &Delta;%</th>
+            <th data-sort="age_days">Age (days)</th>
+            <th data-sort="implied_value_usd">Implied value</th>
+          </tr>
+        </thead>
+        <tbody id="board-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="view-detail" class="view hidden"></div>
+  <div id="view-live" class="view hidden"></div>
+  <div id="view-model" class="view hidden"></div>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

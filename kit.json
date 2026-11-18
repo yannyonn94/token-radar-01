@@ -1,0 +1,113 @@
+{
+  "format": "agent-fun/kit/v1",
+  "competition": "token-radar-01",
+  "phase": "dev",
+  "bundle_sha256": "ea1c9dccab78e6846655e81b921a79465c7267677ea2e0908624ddbc8a012d43",
+  "dataset_sha256": null,
+  "harness_version": "harness@4ba923d701f156ec6cb1ab4325f7321b931722d827b6c6d103885e142196546d node v26.13.1",
+  "scorer_version": "scorer@fce442596b81d73e5aba16bac7056135501126f9be8b34fce0bff2f980063fdb program@09a3c69e80790f73fe3f77b15788aeefd7975f9237e2051a9ef3603de3d55da2",
+  "pricing_rev": "c6fcfac2cd8c1a316582690b02362df43ca26403f81019dbc528d75df1fb04e0",
+  "protocol": "agent-fun/program/v1",
+  "files": [
+    {
+      "path": "RULES.txt",
+      "sha256": "4b39b78e154947c40453e9587767e8ed19a3d32c63dc42aa2024e0a06737aa25",
+      "size": 89487
+    },
+    {
+      "path": "cli/makefun.mjs",
+      "sha256": "0e6f817e49d3b2ab0f220e803c16ac26c876f752c98226b8a631926322d486e2",
+      "size": 14626536
+    },
+    {
+      "path": "cli/site.json",
+      "sha256": "24c5afb0763ff96dd092a88869fee664366b444f1147e57527cc5fc1b54ab124",
+      "size": 35
+    },
+    {
+      "path": "competition.yaml",
+      "sha256": "86f07ff7bdbc8699f3afae270c3b4401a198395ec83db05e4109f4616165e188",
+      "size": 62929
+    },
+    {
+      "path": "harness/CODE.sha256",
+      "sha256": "cec854c63bde1b634f1ea8d7e6ed27692212a61c5e98f29783434c66d7ff902a",
+      "size": 16531
+    },
+    {
+      "path": "harness/SOURCES.sha256",
+      "sha256": "d1d965d5325410ff88a13de2a7df61352826bb991a8b49ac4db8a3f2af4c7cf2",
+      "size": 16531
+    },
+    {
+      "path": "harness/harness-src.tar.gz",
+      "sha256": "bb76da6a65b00123b9dd99fd79e7e5d8ee89efae5f17429817dfeac470bdb528",
+      "size": 2339434
+    },
+    {
+      "path": "harness/harness-src.tar.gz.sha256",
+      "sha256": "03cdef4965984dca041893fca5ad660c251782d56d86b5750924c2caa260f6ed",
+      "size": 85
+    },
+    {
+      "path": "input/README.md",
+      "sha256": "e54cb2317427750d6dee80e8e8c3f9cd8aa7f2011cb1ee880484175a22138e74",
+      "size": 4468
+    },
+    {
+      "path": "input/snapshot.json",
+      "sha256": "42a71213519479f3a180cc5010cbbf6bd18a2447fa0ad29e4c5122b6c9184393",
+      "size": 247940
+    },
+    {
+      "path": "starter/LICENSE",
+      "sha256": "c31b3812c449f571742f26f51db65810331e15ca53b9ee492f739288da6c6d36",
+      "size": 1104
+    },
+    {
+      "path": "starter/dashboard/app.css",
+      "sha256": "2a5f41d0ab590526c283e0defbdf99d49d97dc238085281f5dc2ea2e007d4ffd",
+      "size": 8007
+    },
+    {
+      "path": "starter/dashboard/app.js",
+      "sha256": "ec9f56777b999566443aa66e7b409465f605c32c037151a2523ae34891e0f58d",
+      "size": 21088
+    },
+    {
+      "path": "starter/dashboard/index.html",
+      "sha256": "90102a0b03f297781c5875cb72b1e56375c7e5cb40c045fbd2b55b48f8955806",
+      "size": 448
+    },
+    {
+      "path": "starter/lib/model.ts",
+      "sha256": "bf745f6cf74e359a67ee75c5bbd36bd3b5d506c00e5eb0520a2c840188de744a",
+      "size": 19519
+    },
+    {
+      "path": "starter/main.ts",
+      "sha256": "0a730989ddf5f3b98c9bf1956abb40ff1cdd70e465611568ad9be15b0db0c531",
+      "size": 4673
+    },
+    {
+      "path": "starter/screenshots/1-board.png",
+      "sha256": "8344da28cd865679c7de7d3df0b7e5094de2880fe3f49e89878cb436c115a6eb",
+      "size": 148257
+    },
+    {
+      "path": "starter/screenshots/2-detail.png",
+      "sha256": "3b66701b61aed8e2d79395d48692eb4f2650a9b929719ab7fba44d63d4563479",
+      "size": 219469
+    },
+    {
+      "path": "starter/screenshots/3-filtered.png",
+      "sha256": "cd5af3b3f1442125e338edd207175fbd6a839237fdb314543a549999b8084fca",
+      "size": 137873
+    },
+    {
+      "path": "starter/vendor/makefun-board.ts",
+      "sha256": "9ca51b6e5cd84fe46cb0efa61e2ea99365a1fb0e21f2b75e6007f977f0dc326e",
+      "size": 19788
+    }
+  ]
+}

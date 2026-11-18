@@ -1,0 +1,123 @@
+:root {
+  --bg: #0b1020;
+  --panel: #141b33;
+  --text: #e6e9f2;
+  --muted: #8a93ad;
+  --accent: #5b8cff;
+  --positive: #3dd68c;
+  --negative: #ff6b6b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+.site-header {
+  background: var(--panel);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 1rem 0;
+}
+
+h1 { margin: 0; font-size: 1.5rem; }
+.subtitle { color: var(--muted); margin: 0.25rem 0 1rem; font-size: 0.9rem; }
+
+.tabs { display: flex; gap: 0.5rem; }
+.tab {
+  background: transparent;
+  color: var(--muted);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.tab.active { background: var(--accent); color: white; }
+
+.view { padding: 1rem 0; }
+.hidden { display: none; }
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+input[type="search"], select {
+  background: var(--panel);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text);
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.check { display: flex; align-items: center; gap: 0.25rem; color: var(--muted); font-size: 0.9rem; }
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.board-table th, .board-table td {
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.board-table th {
+  cursor: pointer;
+  user-select: none;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.board-table tbody tr:hover { background: rgba(255,255,255,0.02); cursor: pointer; }
+
+.pos { color: var(--positive); }
+.neg { color: var(--negative); }
+
+.detail-card {
+  background: var(--panel);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-box {
+  background: rgba(255,255,255,0.03);
+  padding: 1rem;
+  border-radius: 6px;
+}
+.stat-label { color: var(--muted); font-size: 0.8rem; margin-bottom: 0.25rem; }
+.stat-value { font-size: 1.25rem; font-weight: 600; }
+
+.farm-steps { list-style: none; padding: 0; }
+.farm-steps li {
+  background: rgba(255,255,255,0.03);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
