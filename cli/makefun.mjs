@@ -268563,7 +268563,7 @@ async function makeKeypair(file3) {
     writeFileSync13(tmp, `${JSON.stringify(bytes2)}
 `, { mode: 384, flag: "wx" });
     chmodSync7(tmp, 384);
-    linkSync(tmp, file3);
+    renameSync3(tmp, file3);
     return true;
   } catch (err) {
     if (err.code === "EEXIST" && existsSync17(file3)) return false;
